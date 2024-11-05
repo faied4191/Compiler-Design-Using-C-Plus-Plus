@@ -12,3 +12,13 @@ bool is_keyword(const string& str) {
     }
     return false;
 }
+
+// Function to check if a given string is an integer
+bool is_integer(const string& str) {
+    for (int i = 0; i < str.length(); i++) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
