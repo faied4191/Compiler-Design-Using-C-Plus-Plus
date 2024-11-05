@@ -22,3 +22,20 @@ bool is_integer(const string& str) {
     }
     return true;
 }
+
+// Main function
+int main() {
+    string input;
+    cout << "Enter input: ";
+    cin >> input;
+
+    if (is_keyword(input)) {
+        cout << "Keyword" << endl;
+    } else if (is_integer(input)) {
+        cout << "Integer" << endl;
+    } else {
+        cout << "Invalid Input" << endl;
+    }
+
+    return 0;
+}
