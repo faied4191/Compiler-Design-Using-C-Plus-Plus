@@ -37,3 +37,22 @@ bool is_float(const string& str) {
     }
     return has_decimal;
 }
+
+// Main function
+int main() {
+    string input;
+    cout << "Enter input: ";
+    cin >> input;
+
+    if (is_keyword(input)) {
+        cout << "Keyword" << endl;
+    } else if (is_integer(input)) {
+        cout << "Integer" << endl;
+    } else if (is_float(input)) {
+        cout << "Floating point" << endl;
+    } else {
+        cout << "Invalid Input" << endl;
+    }
+
+    return 0;
+}
